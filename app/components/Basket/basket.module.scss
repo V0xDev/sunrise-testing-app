@@ -1,0 +1,29 @@
+.basket {
+  @include flex-with-gap(column, start, start, 2rem);
+
+  .link {
+    @extend %page-prev-button;
+  }
+
+  .label {
+    font-weight: 700;
+    font-size: map.get($font-size, s3);
+  }
+
+  .product {
+    @extend %product-item;
+  }
+
+  .allPrice {
+    @include flex-with-gap(row, start, center, 1rem);
+
+    span {
+      font-size: map.get($font-size, m1);
+    }
+
+    span:last-child {
+      color: map.get($neutral, 100);
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+$base-size: 5px;
+$base-rounded: 8px;
+$base-padding: 1rem;
+$base-gap: 1rem;
+
+$base: (
+  main: #1b1b1b,
+  contrast: #ffffff,
+);
+
+$z-index: (
+  blob: -1,
+  base: 10,
+  modal: 50,
+);
+
+$size: (
+  small: 14px,
+  medium: 16px,
+  large: 18px,
+);
+
+$font-size: (
+  s1: 12px,
+  s2: 14px,
+  s3: 16px,
+  m1: 20px,
+  m2: 24px,
+  m3: 28px,
+  l1: 32px,
+  l2: 40px,
+  l3: 48px,
+  xl1: 64px,
+  xl2: 80px,
+  xl3: 96px,
+);
+
+$spacing: (
+  small_4x: $base-size,
+  small_3x: calc($base-size * 2),
+  small_2x: calc($base-size * 3),
+  small_x: calc($base-size * 4),
+  small: calc($base-size * 6),
+  medium: calc($base-size * 8),
+  large: calc($base-size * 10),
+  large_x: calc($base-size * 12),
+  large_2x: calc($base-size * 16),
+  large_3x: calc($base-size * 24),
+);
+
+$violet: (
+  160: #450051,
+  140: #5a006b,
+  120: #6d0083,
+  100: #7d0097,
+  80: #9e4aa2,
+  60: #b97cb7,
+  40: #d0a9d0,
+  20: #e5d0e5,
+  10: #f3eaf3,
+  05: #faf3fa,
+);
+
+$green: (
+  160: #004a12,
+  140: #006015,
+  120: #00721c,
+  100: #009724,
+  80: #26a644,
+  60: #45b564,
+  40: #74c98c,
+  20: #a7d9b7,
+  10: #d0ebd0,
+  05: #e9f7e9,
+);
+
+$red: (
+  160: #520000,
+  140: #690000,
+  120: #7e0000,
+  100: #970000,
+  80: #b02d2d,
+  60: #c45050,
+  40: #df7d7d,
+  20: #efb9b9,
+  10: #f7d9d9,
+  05: #fbeceb,
+);
+
+$blue: (
+  160: #003347,
+  140: #004560,
+  120: #005675,
+  100: #006897,
+  80: #2b85b0,
+  60: #4da8c9,
+  40: #7ec0e3,
+  20: #b4d8ea,
+  10: #dbedf3,
+  05: #effbff,
+);
+
+$yellow: (
+  160: #554800,
+  140: #6b5b00,
+  120: #806f00,
+  100: #978200,
+  80: #b09d26,
+  60: #c4b545,
+  40: #d9cd74,
+  20: #ece5a7,
+  10: #f4f2d0,
+  05: #fbfaf3,
+);
+
+$azure: (
+  160: #005054,
+  140: #00676b,
+  120: #007d83,
+  100: #009297,
+  80: #26a6a9,
+  60: #45b5b7,
+  40: #74c9ca,
+  20: #a7d9d9,
+  10: #d0ebec,
+  05: #e9fafa,
+);
+
+$orange: (
+  160: #623b00,
+  140: #7b4b00,
+  120: #925e00,
+  100: #bd7500,
+  80: #d28d26,
+  60: #e1a545,
+  40: #eebc74,
+  20: #f7d0a7,
+  10: #ffe5d0,
+  05: #fff3eb,
+);
+
+$neutral: (
+  160: #292929,
+  140: #373737,
+  120: #4f4f4f,
+  100: #707070,
+  80: #b1b0b0,
+  60: #c8c8c8,
+  40: #d5d5d6,
+  20: #e3e3e3,
+  10: #f1f1f1,
+  05: #f8f8f8,
+);

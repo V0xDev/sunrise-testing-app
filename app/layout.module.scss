@@ -1,0 +1,12 @@
+.wrapperPage {
+  height: 100svh;
+  max-width: 60%;
+  margin: 0 auto;
+  gap: $base-rounded;
+  padding-top: 2rem;
+
+  display: grid;
+  grid-template-areas: "header header" "sidebar content";
+  grid-template-rows: min-content minmax(500px, 800px);
+  grid-template-columns: min-content 1fr;
+}

@@ -1,0 +1,9 @@
+.filterNewProducts {
+  @include flex(row, start, start);
+  @extend %content-wrapper;
+
+  span {
+    user-select: none;
+    font-size: map.get($font-size, s2);
+  }
+}

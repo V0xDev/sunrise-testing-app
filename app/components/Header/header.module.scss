@@ -1,0 +1,7 @@
+.header {
+  width: 100%;
+  background-color: map.get($blue, 60);
+  padding: 1rem;
+  border-radius: $base-rounded;
+  grid-area: header;
+}

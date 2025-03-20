@@ -1,0 +1,39 @@
+.content {
+  @extend %content-wrapper;
+  overflow-x: auto;
+  grid-area: content;
+
+  display: flex;
+  flex-direction: column;
+
+  .contentBlock {
+    padding: $base-padding;
+    @include flex-with-gap(row, start, start);
+
+    .tableContainer {
+      height: 100%;
+    }
+
+    .tableContainer table {
+      tbody tr {
+        &:last-child td,
+        &:last-child th {
+          border: 0;
+        }
+      }
+    }
+
+    .productLink {
+      text-decoration: underline;
+    }
+  }
+
+  .contentBlock:first-child {
+    border-bottom: 1px solid map.get($neutral, 40);
+  }
+
+  .contentBlock:last-child {
+    flex: 1;
+    overflow-y: auto;
+  }
+}

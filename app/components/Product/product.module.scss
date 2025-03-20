@@ -1,0 +1,13 @@
+.product {
+  @include flex-with-gap(column, start, start, 2rem);
+  grid-area: content;
+  padding-top: $base-padding;
+
+  .link {
+    @extend %page-prev-button;
+  }
+
+  .product {
+    @extend %product-item;
+  }
+}

@@ -1,0 +1,27 @@
+.sidebar {
+  @extend %content-wrapper;
+  min-width: 250px;
+  padding: $base-padding;
+  grid-area: sidebar;
+
+  @include flex-with-gap(column, start, start, 1.5rem);
+  box-sizing: border-box;
+
+  .info {
+    @include flex-with-gap(row, start, center);
+    color: map.get($neutral, 100);
+    user-select: none;
+
+    .label {
+      font-weight: 700;
+      font-size: map.get($font-size, s2);
+    }
+  }
+
+  .filterContainer {
+    width: 100%;
+    flex: 1;
+
+    @include flex-with-gap(column, start, start);
+  }
+}

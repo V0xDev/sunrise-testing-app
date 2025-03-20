@@ -1,0 +1,19 @@
+.navList {
+  @include flex-with-gap(row, space-between, center);
+
+  a {
+    color: map.get($base, contrast);
+    user-select: none;
+    font-weight: 600;
+    opacity: 0.4;
+  }
+
+  .activeLink {
+    opacity: 0.8;
+    cursor: default;
+  }
+
+  .link {
+    @include flex-with-gap(row, center, center);
+  }
+}

@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "./variables.scss" as *;
+@use "./mixins.scss" as *;
+
+%content-wrapper {
+  border: 1px solid map.get($neutral, 40);
+  border-radius: $base-rounded;
+}
+
+%page-prev-button {
+  @include flex(row, start, center);
+  color: map.get($neutral, 60);
+  font-weight: 700;
+  transition: color 0.07s ease-in;
+
+  &:hover {
+    color: map.get($neutral, 120);
+  }
+}
+
+%product-item {
+  @include flex-with-gap(column, start, start);
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid map.get($neutral, 60);
+
+  span {
+    font-size: map.get($font-size, s3);
+  }
+}

@@ -1,0 +1,7 @@
+.counter {
+  @include flex-with-gap(row, right, center, 0.5rem);
+
+  .label {
+    font-weight: 700;
+  }
+}
